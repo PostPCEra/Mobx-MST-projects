@@ -1,8 +1,7 @@
 
 # TodoMVC Example
-This project template was built with Create React App.
 
-In the project directory, you can run:
-- clone the repo
+This project is the clone of https://github.com/mobxjs/mobx-state-tree/tree/master/packages/mst-example-todomvc
+- clone this repo
 - $ npm install  (download all dependencies & build project)
 - $ npm start ( will open project at http://localhost:3000 )
