@@ -5,3 +5,6 @@ This project is the clone of https://github.com/mobxjs/mobx-state-tree/tree/mast
 - clone this repo
 - $ npm install  (download all dependencies & build project)
 - $ npm start ( will open project at http://localhost:3000 )
+
+------------
+What exactly is the ['react-scripts start' command?](https://stackoverflow.com/questions/50722133/what-exactly-is-the-react-scripts-start-command)
