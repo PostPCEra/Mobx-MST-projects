@@ -1,68 +1,19 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## React Table : Hooks for building fast and extendable tables and datagrids for React
 
-In the project directory, you can run:
+- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- step 2: /src folder files are added from [this codesandbox](https://codesandbox.io/s/github/tannerlinsley/react-table/tree/master/archives/v6-examples/react-table-custom-filtering) which is is ONE of the Example of  github repo [react-table](https://github.com/tannerlinsley/react-table)
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- other good examples from above git repo page
+ --  Custom  filter [- grouping](https://8lp4kkovv0.codesandbox.io/)
+ -- [editable](https://codesandbox.io/s/github/tannerlinsley/react-table/tree/master/archives/v6-examples/react-table-editable-content) 
+ -- [table cell renders](https://codesandbox.io/s/github/tannerlinsley/react-table/tree/master/archives/v6-examples/react-table-cell-renderers)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Notes on using this as basis for our 'Knowledge base Notes' application ( fast one page Filtertable serach)
+- see if we can use above [Editable] for quick modification of existing records. : we can keep 2 fields one to edit URL , other filed ( of same vlaue) as clickable URL. If not we may need to add Mobx-MST and do all that DATA stuff with a PopUP 'ADD new Record' Form
+- above Custom Group Filter seems good , we may use to Filter our groups?
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Notes on various "React Tables" components on internet (github)
+- The above one react-table is highly customizable so making is suitable to go as PART of any 'enterprise web application' . see [HOC extensions](https://github.com/tannerlinsley/react-table/tree/v6#hoc-extensions) 
+- there are some  "React Table" components that is specalized to dispaly GIGA data sets ( such as Millio rows) they are good at that ( 1M rows). The above good at 'cutomization' so well suited for NORAML Web applications
