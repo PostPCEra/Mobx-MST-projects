@@ -4,9 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mobx-state-tree TodoMVC Example</title>
+
+    <script src="opt_prod_live_js_bundle.js"></script>
   </head>
+  
   <body>
-    <div class="todoapp" id="root"></div>
+    <div class="todoapp" id="root">
+
+      <!-- every thing insde <div id="root">  will be replaced by React based on what we are setting
+          in index.js  render(<App store={store} />, document.getElementById("root")) -->
+      <div id="omsri"> Om Namo venkatesaya ...------------------------------------------------</div>
+
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -18,4 +27,8 @@
       To create a production bundle, use `npm run build`.
     -->
   </body>
+  <!-- 
+  
+  -->
+  <script src="test.js"></script>
 </html>

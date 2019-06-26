@@ -16,9 +16,12 @@ export default observer(
             const itemWord = activeCount === 1 ? "item" : "items"
 
             return (
+                <div id="omsri2">
                 <span className="todo-count">
                     <strong>{activeCount || "No"}</strong> {itemWord} left
                 </span>
+                <span> asr: this is from footer.js span </span> 
+                </div>
             )
         }
 

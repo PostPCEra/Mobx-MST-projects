@@ -44,6 +44,9 @@ export default observer(
                     <ul className="todo-list">
                         {filteredTodos.map(todo => <TodoItem key={todo.id} todo={todo} />)}
                     </ul>
+
+                    <div id="btn1">This is OMNamo Sri, the LORD 9999999999</div>
+
                     {this.renderFooter()}
                 </section>
             )

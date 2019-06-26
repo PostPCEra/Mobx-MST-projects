@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--
+  Python Tutor: https://github.com/pgbovine/OnlinePythonTutor/
+  Copyright (C) Philip Guo (philip@pgbovine.net)
+  LICENSE: https://github.com/pgbovine/OnlinePythonTutor/blob/master/LICENSE.txt
+-->
+
+<!-- OPT live programming prototype started on 2016-05-30 -->
+
+<head>
+  <title>Live Programming Mode - Python Tutor - Visualize Python and JavaScript code</title>
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typeit@5.10.7/dist/typeit.min.js"></script>
+
+
+
+  <!-- let Webpack take care of everything. Om Namo .... Use the [hash] feature to
+       create unique filenames for releases:
+       https://webpack.github.io/docs/long-term-caching.html
+
+        //    <script  src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+       
+
+  <script  src="https://cdn.jsdelivr.net/npm/typeit@5.10.7/dist/typeit.min.js"></script>
+-->
+<script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
+
+ 
+   <!--
+   <script type="text/javascript" src="build/opt-live.bundle.js" charset="utf-8"></script>
+ 
+  <script type="text/javascript" src="build/opt-live.bundle.js?2b5df79a18" charset="utf-8"></script>
+ 
+   // The below file is literal copy production website copy and it worked flawless
+    // (via inspect->sources->Page in browser)
+-->
+<script type="text/javascript" src="opt-live-bundle-prodsite-copy.js" charset="utf-8"></script>
+ 
+
+  <script>
+
+
+ function runwriter() {
+
+ alert('33 Live mode works, once I copied prod site js file and checked-into github. see comment in live.html file');
+
+//new TypeIt('#autopane', {
+//  new TypeIt('#codeInputPane', {
+//  strings: "omsri = 5"
+//}).go();
+ 
+ // 1. chain is not working, so make it React component it will build to JS , will work
+ // 2. since Typescript is already a bundled compiles js file, just focus on
+ //  React JS build and React Babel 7 environment and incluces that TS compoiled .js file
+ // if required in future we will see if any TypeScript build things ADD required in
+ // our  Bable/React build setup . 
+ // Todo :  ------
+ // 1. React, MobX & Bable setup  b) use Hot Reload so instant edit and Test 
+ //    Next.js we may worry later, may be able to change. foucs now on React & Mobx
+ // 2. use TypeIt as single Line and push code to Editor "after each Line voice Narratrion"
+ //    That why keep it separate and clean of 'TypeIt' DIV and 'Editor' DIV
+//  3. use TypeIt  Before and after callbacks to push code to Editor and Voice control ...
+ 
+ new TypeIt('#autopane', {
+  speed: 45
+}).type('The programers').go();
+
+optLiveFrontend.pyInputAceEditor.setValue('omnamosri = 999 \na = 5');
+
+/*
+.pause(300)
+.options({speed: 200})
+.delete(3)
+.options({speed: 45})
+.pause(300)
+.type('mer\'s wife sent him to teh sto.')
+.pause(500)
+.options({speed: 200})
+.delete(7)
+.type('he store.')
+.pause(500)
+.break()
+.options({speed: 45})
+.type('Her instructions were <em>"Buy butter. See if they have 10 eggs. If they do, buy ten.</em>"')
+.pause(1000)
+.break()
+.type('He came back with ten packs of butter. ')
+.pause(1000)
+.type('Because they have eggs.');
+*/
+
+ /*
+ var code = ['length = 4', 'width = 6', 'area = length * width'] ;
+  var newLine = "<br/>" ;
+
+var st = "" ;
+var i = 0 ;
+var t = new TypeIt('#autopane', {
+	strings: code ,
+      speed : 100 ,
+      lifeLIke : true ,
+			 breakLines: true
+			});
+
+*/
+
+}
+</script>
+
+<!-- insert google-analytics.txt contents here -->
+
+
+
+</head>
+
+<body>
+
+<!-- taken down on 2016-12-06
+
+  <div id="liveModeHeader">
+
+  This is the live programming mode (<a href="https://www.youtube.com/watch?v=JjGt95Te0wo" target="_blank">video intro</a>), which
+  continually runs and visualizes your code as you type. It's
+  <span style="font-weight: bold; color: #e93f34;">highly experimental</span>
+  and does not yet support all languages and
+  features of the <a href="visualize.html" target="_blank">regular
+  Python Tutor visualizer</a>.
+
+  <span id="surveyPane"></span>
+
+   </div>
+
+
+
+
+<table id="experimentalHeader">
+<tr>
+<td valign="top" id="headerTdLeft"></td>
+<td valign="top" id="headerTdRight"></td>
+</tr>
+</table>
+ -->
+
+  <table>
+    <tr>
+      <td valign="top">
+        <div id="pyInputPane">
+          <div id="codeInputWarnings">Write code in
+            <select id="pythonVersionSelector">
+              <option value="2">Python 2.7</option>
+              <option value="3" selected>Python 3.6</option>
+              <option value="js">JavaScript ES6</option>
+            </select>
+
+            <div id="like_button_container"></div>
+
+            <span> <input type="button" value="click me" id="clkme" onclick="runwriter()"/> </span>
+            <span id="liveModeExtraWarning" style="color: #888; font-size: 8pt; float: right;">(drag lower right corner to resize code editor)</span>
+          </div>
+          <div id="someoneIsTypingDiv" style="color: #e93f34; font-weight: bold; display: none;">Someone is typing ...</div>
+
+          <div id="autopane">
+            <style scoped>
+              * {
+              font-family: 'Yanone Kaffeesatz', sans-serif;
+              font-weight: 300;
+              }
+
+            em { font-weight: bold;
+            }
+            </style>
+          </div>
+          <div id="codeInputPane"></div>
+
+          <div id="legendDiv"></div>
+          <div id="executionSlider" style="margin-top: 10px;"></div>
+
+          <!-- copied and pasted from pytutor.js
+               TODO: integrate all this together and modularize -->
+
+          <div id="vcrControls" style="display: none;">
+            <button id="jmpFirstInstr", type="button">&lt;&lt; First</button>
+            <button id="jmpStepBack", type="button">&lt; Back</button>
+            <span id="curInstr"></span>
+            <button id="jmpStepFwd", type="button">Forward &gt;</button>
+            <button id="jmpLastInstr", type="button">Last &gt;&gt;</button>
+          </div>
+
+          <div id="rawUserInputDiv" style="display: none;">
+            <span id="userInputPromptStr"></span>
+            <input type="text" id="raw_input_textbox" size="30"/>
+            <button id="raw_input_submit_btn">Submit</button>
+          </div>
+
+          <div id="frontendErrorOutput"></div>
+        </div>
+        <div id="eurekaSurveyPane"></div>
+      </td>
+      <td valign="top">
+        <div id="pyOutputPane"/>
+      </td>
+    </tr>
+  </table>
+
+<!--
+<div id="footer">
+
+<div id="optionsPane">
+  <select id="cumulativeModeSelector">
+    <option value="false">hide exited frames [default]</option>
+    <option value="true">show exited frames (Python)</option>
+
+  </select>
+  <select id="heapPrimitivesSelector">
+    <option value="false">inline primitives and try to nest objects</option>
+    <option value="nevernest" selected>inline primitives but don't nest objects [default]</option>
+    <option value="true">render all objects on the heap (Python)</option>
+  </select>
+  <select id="textualMemoryLabelsSelector">
+    <option value="false">draw pointers as arrows [default]</option>
+    <option value="true">use text labels for pointers</option>
+  </select>
+</div>
+
+<p>
+  <button id="genUrlBtn" class="smallBtn" type="button">Generate permanent link</button> <input type="text" id="urlOutput" size="70"/>
+</p>
+<p>
+  <button id="genUrlShortenedBtn" class="smallBtn" type="button">Generate shortened link</button> <input type="text" id="urlOutputShortened" size="25"/>
+</p>
+
+
+<p>Click the button above to create a permanent link to your
+visualization (<a href="https://www.youtube.com/watch?v=h4q3UKdEFKE" target="_blank">video demo</a>). To report a bug, paste the link along with a brief error
+description in an email addressed to philip@pgbovine.net</p>
+
+<p style="margin-top: 35px;">
+This live programming mode of
+<a href="http://pythontutor.com/">Python Tutor</a> (<a href="https://github.com/pgbovine/OnlinePythonTutor">code on GitHub</a>) supports three
+languages: Python <a href="https://docs.python.org/2.7/">2.7</a> and <a
+href="https://docs.python.org/3.6/">3.6</a> with limited module
+imports, and
+JavaScript running in Node.js v6.0.0 with limited support for ES6.
+
+Try the regular
+<a href="http://pythontutor.com/visualize.html">Python Tutor</a>
+visualizer for additional language support.</p>
+
+-->
+</div>
+
+
+
+<!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Load our React component. -->
+  <script src="like_button.js"></script>
+
+
+</body>
+</html>
