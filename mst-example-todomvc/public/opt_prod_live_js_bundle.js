@@ -22689,7 +22689,8 @@ var AbstractBaseFrontend = (function () {
             }, "text");
         }
         else {
-            // for Python 2 or 3, directly execute backendScript
+			// for Python 2 or 3, directly execute backendScript
+			alert('asr in live_js_bundle.js line 22690:' + backendScript);
             pytutor_1.assert(pyState === '2' || pyState === '3');
             $.get(backendScript, { user_script: codeToExec,
                 raw_input_json: this.rawInputLst.length > 0 ? JSON.stringify(this.rawInputLst) : '',
@@ -24548,7 +24549,11 @@ var OptLiveFrontend = (function (_super) {
         }
         else {
             if (pyState === '2' || pyState === '3') {
-                $.get(backendScript, { user_script: codeToExec,
+				console.log('backendscript:' + backendScript);
+				var omurl = "http://localhost:3019/LIVE_exec_py3.py" ;
+				alert('alert omurl:' + omurl);
+
+                $.get(omurl, { user_script: codeToExec,
                     raw_input_json: this.rawInputLst.length > 0 ? JSON.stringify(this.rawInputLst) : '',
                     options_json: JSON.stringify(backendOptionsObj),
                     user_uuid: this.userUUID,
