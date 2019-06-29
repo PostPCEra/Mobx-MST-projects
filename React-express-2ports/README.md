@@ -1,11 +1,13 @@
-# React_Express_App_Medium_Tutorial
-- This repository has the code to support a tutorial that I created on Medium called Create a React FrontEnd, a Node/Express BackEnd and connect them together.
-- This repository can also be used as a starting point (boilerplate), if you whant to create your own React/Express app.
-.
+# React_Express_App 
+- This repo is clone of below mentioned origial repo
+- This repository has the code to support a tutorial Create a React FrontEnd, a Node/Express BackEnd and connect them together.
+- support tutorial [Create a React FrontEnd, a Node/Express BackEnd and connect them together](https://medium.com/@jrshenrique/create-a-react-frontend-a-node-express-backend-and-connect-them-together-c5798926047c)
 
-## Where can I check the tutorial?
-You are very welcome to check the tutorial on Medium. Just follow the link below.
-- [Create a React FrontEnd, a Node/Express BackEnd and connect them together](https://medium.com/@jrshenrique/create-a-react-frontend-a-node-express-backend-and-connect-them-together-c5798926047c)
+# My Customization
+- pybackend folder was added which constains, python scripts which are expected to be executed by phthon 'bottle' server
+- install 'bottle' server first
+- $python bottle_server.py  (starts server on port 4999)
+
 
 ## About the app
 Actually, there are two separated apps. The Client which serves the FrontEnd (using React), and the API (in Node/Express).
