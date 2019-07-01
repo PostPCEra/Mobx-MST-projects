@@ -38,3 +38,28 @@ class App extends Component {
 }
 
 export default App;
+
+/*
+
+TWO sets of  Response Headers :   first one Browser did NOT display Visualization, 2 nd one DOES
+-----
+access-control-allow-origin: *
+connection: close
+content-length: 528
+content-type: text/html; charset=utf-8
+date: Mon, 01 Jul 2019 09:48:58 GMT
+etag: W/"210-Ff3Tg7vjNn2Go3zHasTEQ7v0+TI"   ----> Node js running on 3009 as Proxy
+Vary: Accept-Encoding
+x-powered-by: Express
+
+
+connection: keep-alive
+content-length: 771
+content-type: text/html; charset=UTF-8
+date: Mon, 01 Jul 2019 09:55:50 GMT
+server: WSGIServer/0.2 CPython/3.7.1   // asr: ------->  with Python server port 4999
+Vary: Accept-Encoding
+X-Powered-By: Express
+
+
+*/

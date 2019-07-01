@@ -4,7 +4,7 @@ export default class OPT extends Component {
 
   setTexttoEditor () {
         // it gives error without 'window.'
-        window.optLiveFrontend.pyInputAceEditor.setValue('omnamosri = 999 \na = 5');
+        window.optLiveFrontend.pyInputAceEditor.setValue('omnamosri = 999 \na = 5 \nbbb = a + 55');
         alert(' in side OPT_live-html-code.js  file'); 
         //console.log(' in OPT');
     }

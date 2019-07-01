@@ -23626,6 +23626,7 @@ this.diff_match_patch=diff_match_patch;this.DIFF_DELETE=-1;this.DIFF_INSERT=1;th
 
 /***/ }),
 /* 36 */
+// asr comment: on line 23639 show Time out error on browser console 
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {/*
@@ -24549,10 +24550,25 @@ var OptLiveFrontend = (function (_super) {
         }
         else {
             if (pyState === '2' || pyState === '3') {
-				console.log('backendscript:' + backendScript);
+				/*
 				var omurl = "http://localhost:3009/LIVE_exec_py3.py" ;
 				backendScript = omurl ;
+				console.log('asr 33 backendscript:' + backendScript);
+				
+
+				// asr : sample Jquery get test .. is working ....
+				$.get(backendScript, function(data, status){
+					alert("Data:22 " + data + "\nStatus: " + status);
+				  });
+				$.get(backendScript, execCallback, "json");
+
+				alert('after 2nd call');
+				
+				backendScript = "http://localhost:4999/LIVE_exec_py3.py" ;
+				*/
 				alert('backendScript:' + backendScript);
+				alert('after REACT 6 th   codetoExec:'+ codeToExec );
+alert('after 6 rd  rawInputLst:'+ JSON.stringify(this.rawInputLst) );
 
                 $.get(backendScript, { user_script: codeToExec,
                     raw_input_json: this.rawInputLst.length > 0 ? JSON.stringify(this.rawInputLst) : '',
@@ -24560,7 +24576,8 @@ var OptLiveFrontend = (function (_super) {
                     user_uuid: this.userUUID,
                     session_uuid: this.sessionUUID,
                     prevUpdateHistoryJSON: prevUpdateHistoryJSON,
-                    exeTime: new Date().getTime() }, execCallback, "json");
+					exeTime: new Date().getTime() }, execCallback, "json");
+					
             }
             else if (pyState === 'js') {
                 if (window.location.href.indexOf('localhost') >= 0) {
