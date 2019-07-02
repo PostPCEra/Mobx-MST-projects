@@ -1,8 +1,8 @@
-# TodoMVC Example
+# Mobx MST  Material-UI Webapp Project
 
 
 ## asr Notes:
-- v 0.1 : got fresh from github , did $npm install ; $npm start ; todo-mvc with Mobx Mst worked well
+- v 0.1 : got Mobx mst-example-todomvc fresh from github , did $npm install ; $npm start ; todo-mvc with Mobx Mst worked well
 - v 0.2 : will be adding Material-UI React from this repo: https://github.com/seeschweiler/react-material-ui/tree/master/src/components
 
 This project template was built with [Create React App](https://github.com/facebookincubator/create-react-app).
