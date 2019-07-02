@@ -34,7 +34,7 @@ app.use(function(req, res, next) {
 });
 
 /*
-// based on that article ...
+// DID not work :  it is based on that article ...https://www.telerik.com/blogs/supporting-cors-by-proxying-requests-with-express
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     next();

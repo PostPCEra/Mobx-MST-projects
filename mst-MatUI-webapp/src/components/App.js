@@ -1,11 +1,12 @@
 import React from "react"
-import Header from "../components/Header"
-import MainSection from "../components/MainSection"
+import NavBar from './NavBar'
+import DenseTable from './DenseTable'
+import './App.css';
 
 const App = ({ store }) => (
     <div>
-        <Header addTodo={store.addTodo} />
-        <MainSection store={store} />
+        <NavBar />
+        <DenseTable />
     </div>
 )
 
