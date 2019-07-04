@@ -12,20 +12,22 @@ public class Factors {
     
     public int[] getallFactors() {
         int arrFactors[] = new int[1000];  // should be arrayList of Integeres ;
+        int indx = 0;
+        int factor1 = 2;
         boolean more = true ;
         while (more) {
         
             factor2 = get2ndFactor( factor1, number);
-            if ( factor2 == 0 ) {
-                factor1++ ;
-            }
-            else if (factor2 > 0) {
-                number = factor2 ;
-                arrFactors[ind++] = factor1 ;
+            if ( factor2 == factor1 ) {
+                more = false;
             }
             
-            if ( factor2 == factor1 ) {
-                break;
+            if ( factor2 == 0 ) {
+                factor1++ ;   // do with next number
+            }
+            else if (factor2 > 0) {
+                number = factor2 ;  // new value for 'number' , but factor1 still same
+                arrFactors[indx++] = factor1 ;
             }
                      
         }  // end of while
