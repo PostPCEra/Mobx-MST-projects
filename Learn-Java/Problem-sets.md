@@ -18,7 +18,7 @@ public class Factors {
     public int[] getallFactors() {
         int arrFactors[] = new int[1000];  // should be arrayList of Integeres ;
         int indx = 0;
-        int factor1 = 2;
+        int factor1 = 2; //start with first prime factor 2
         boolean more = true ;
         while (more) {
         
