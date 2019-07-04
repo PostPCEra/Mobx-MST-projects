@@ -3,7 +3,7 @@
 ## sets
 1. Write a program to print 'all prime factors' of a given number. 
 - example : Factors(20) -->  2 x 2 x 5 ; Factors(35) -->  7 x 5
-'''
+```
 public class Factors {
     private int givenNumber ; 
     Factors(int number) {
@@ -41,4 +41,4 @@ public class Factors {
     }
 
 }
-'''
+```
