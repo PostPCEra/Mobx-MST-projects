@@ -1,8 +1,13 @@
 # Java Problme sets
 
 ## sets
-1. Write a program to print 'all prime factors' of a given number. 
-- example : Factors(20) -->  2 x 2 x 5 ; Factors(35) -->  7 x 5
+- 1. Write a program to print Fizz Buzz
+- 2. Write a program to print largest number in an array
+- 3. write a program to sort a number array
+- 4. Write a program to return 'all prime factors' of a given number. example : Factors(20) -->  2 x 2 x 5 ; Factors(35) -->  7 x 5
+- 5. write a program to merge two different arrays (which are sorted already) into a new arry which should sorted.
+
+
 ```
 public class Factors {
     private int givenNumber ; 
@@ -17,7 +22,7 @@ public class Factors {
         boolean more = true ;
         while (more) {
         
-            factor2 = get2ndFactor( factor1, number);
+            int factor2 = get2ndFactor( factor1, number);
             if ( factor2 == factor1 ) {
                 more = false;
             }
