@@ -28,7 +28,7 @@ public class Factors {
             }
             
             if ( factor2 == 0 ) {
-                factor1++ ;   // do with next number
+                factor1++ ;   // next value for factor1, but 'number' is still same
             }
             else if (factor2 > 0) {
                 number = factor2 ;  // new value for 'number' , but factor1 still same
