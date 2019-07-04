@@ -1,6 +1,6 @@
 # Java Problme sets
 
-## sets
+## sets given in 'Introduction to JAVA programming' class at West Vally collage ( summber `19)
 - 1. Write a program to print Fizz Buzz
 - 2. Write a program to print largest number in an array
 - 3. write a program to sort a number array
