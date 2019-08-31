@@ -6,12 +6,21 @@ import Clock from './Clock'
 @inject('store')
 @observer
 class SampleComponent extends React.Component {
+
+  
   componentDidMount () {
     this.props.store.start()
   }
 
   componentWillUnmount () {
     this.props.store.stop()
+  }
+  handleFunc() {
+    alert('hi therere');
+  }
+  
+  handleViaOutsideCall() {
+    outsidejs();
   }
 
   render () {
@@ -22,6 +31,15 @@ class SampleComponent extends React.Component {
           lastUpdate={this.props.store.lastUpdate}
           light={this.props.store.light}
         />
+
+        <br/><br/>
+        <div>
+          <button onClick={this.handleFunc}>Calls inside JS func</button>
+          <button onClick={this.handleViaOutsideCall}>Calls outside JS func</button>
+        </div>
+        <br/>
+      
+
         <nav>
           <Link href={this.props.linkTo}>
             <a>Navigate</a>

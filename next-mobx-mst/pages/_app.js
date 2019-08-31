@@ -35,9 +35,14 @@ export default class MyApp extends App {
   render () {
     const { Component, pageProps } = this.props
     return (
-      <Provider store={this.store}>
-        <Component {...pageProps} />
-      </Provider>
+      <div>
+
+        <Provider store={this.store}>
+          <Component {...pageProps} />
+        </Provider>
+
+      </div>
+
     )
   }
 }
