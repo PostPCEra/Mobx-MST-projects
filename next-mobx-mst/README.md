@@ -1,3 +1,15 @@
+
+# App with Next.js , Mobx & Mobx State Tree :
+The repo was created Origially from this repo.  https://github.com/zeit/next.js/tree/canary/examples/with-mobx-state-tree
+
+## How to build
+ - $ git clone 
+ - $ cd next-mobx-mst
+ - $ yarn   # will build by creatin "node_modules & .next" dirs
+ - $ yarn dev  # starts dev server
+
+ 
+---------------------------------
 # MobX State Tree example
 
 ## How to use
