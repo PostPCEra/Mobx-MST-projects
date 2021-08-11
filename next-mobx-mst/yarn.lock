@@ -813,6 +813,49 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@daybrush/utils@^1.0.0", "@daybrush/utils@^1.1.1", "@daybrush/utils@^1.3.1":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@daybrush/utils/-/utils-1.6.0.tgz#0dfd2c360764f63380df4ec0d44e176c69f7bbc3"
+  integrity sha512-9MjMoOLl1U+l8lXByN3BbLZXf+mktoLyeb6t78Jz2WZ7LRldK0FNg8oW//9giO2hHCUyxS7LX6jS1hToGIfRWA==
+
+"@scena/event-emitter@^1.0.3":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@scena/event-emitter/-/event-emitter-1.0.5.tgz#047e3acef93cf238d7ce3a8cc5a12ec6bd9c3bb1"
+  integrity sha512-AzY4OTb0+7ynefmWFQ6hxDdk0CySAq/D4efljfhtRHCOP7MBF9zUfhKG3TJiroVjASqVgkRJFdenS8ArZo6Olg==
+  dependencies:
+    "@daybrush/utils" "^1.1.1"
+
+"@types/node@^12.0.0":
+  version "12.20.19"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.19.tgz#538e61fc220f77ae4a4663c3d8c3cb391365c209"
+  integrity sha512-niAuZrwrjKck4+XhoCw6AAVQBENHftpXw9F4ryk66fTgYaKQ53R4FI7c9vUGGw5vQis1HKBHDR1gcYI/Bq1xvw==
+
+"@types/prop-types@*":
+  version "15.7.4"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.4.tgz#fcf7205c25dff795ee79af1e30da2c9790808f11"
+  integrity sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==
+
+"@types/react-dom@^16.0.0":
+  version "16.9.14"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.9.14.tgz#674b8f116645fe5266b40b525777fc6bb8eb3bcd"
+  integrity sha512-FIX2AVmPTGP30OUJ+0vadeIFJJ07Mh1m+U0rxfgyW34p3rTlXI+nlenvAxNn4BP36YyI9IJ/+UJ7Wu22N1pI7A==
+  dependencies:
+    "@types/react" "^16"
+
+"@types/react@^16", "@types/react@^16.0.0":
+  version "16.14.13"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.14.13.tgz#14f77c75ea581fa632907440dfda23b3c6ab24c9"
+  integrity sha512-KznsRYfqPmbcA5pMxc4mYQ7UgsJa2tAgKE2YwEmY5xKaTVZXLAY/ImBohyQHnEoIjxIJR+Um4FmaEYDr3q3zlg==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/scheduler@*":
+  version "0.16.2"
+  resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
+  integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
+
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.8.5.tgz#51b1c5fe6576a34953bf4b253df9f0d490d9e359"
@@ -1719,6 +1762,14 @@ crypto-browserify@^3.11.0:
     randombytes "^2.0.0"
     randomfill "^1.0.3"
 
+css-styled@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/css-styled/-/css-styled-1.0.0.tgz#6fe10a98f95c24fa66cb1c41e11e7c00bcedac13"
+  integrity sha512-lDdPvM2/djv+La110zVY3RGQ7X4OOlzLS+IEjRcn8UlUmJd1+GNcGfDFmsKWwnLBupsY1w0QM1gRgV4RdcCjfw==
+  dependencies:
+    "@daybrush/utils" "^1.0.0"
+    string-hash "^1.1.3"
+
 css@2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/css/-/css-2.2.4.tgz#c646755c73971f2bba6a601e2cf2fd71b1298929"
@@ -1728,6 +1779,11 @@ css@2.2.4:
     source-map "^0.6.1"
     source-map-resolve "^0.5.2"
     urix "^0.1.0"
+
+csstype@^3.0.2:
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.8.tgz#d2266a792729fb227cd216fb572f43728e1ad340"
+  integrity sha512-jXKhWqXPmlUeoQnF/EhTtTl4C9SnrxSH/jZUih3jmO6lBKr99rP3/+FmrMj4EFpOXzMtXHAZkd3x0E6h6Fgflw==
 
 cyclist@~0.2.2:
   version "0.2.2"
@@ -3267,6 +3323,13 @@ once@^1.3.0, once@^1.3.1, once@^1.4.0:
   dependencies:
     wrappy "1"
 
+order-map@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/order-map/-/order-map-0.2.2.tgz#dcdfd6f81e7eef61ba79c52cfb960be5166ddd9f"
+  integrity sha512-X//Db/lT11tdxxutWQfE+bmbTyieDJWrr/vSiwBwOf8RRw9yAgF7gqn1ihFmfX2E7l7gcPcucep3aWFjo5FpoA==
+  dependencies:
+    "@daybrush/utils" "^1.0.0"
+
 os-browserify@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/os-browserify/-/os-browserify-0.3.0.tgz#854373c7f5c2315914fc9bfc6bd8238fdda1ec27"
@@ -3416,9 +3479,9 @@ path-is-inside@^1.0.1:
   integrity sha1-NlQX3t5EQw0cEa9hAn+s8HS9/FM=
 
 path-parse@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
-  integrity sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
+  integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
 path-to-regexp@2.1.0:
   version "2.1.0"
@@ -3671,6 +3734,16 @@ react-is@^16.8.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.9.0.tgz#21ca9561399aad0ff1a7701c01683e8ca981edcb"
   integrity sha512-tJBzzzIgnnRfEm046qRcURvwQnZVXmuCbscxUO5RWrGTXpon2d4c8mI0D8WE6ydVIm29JiLB6+RslkIvym9Rjw==
 
+react-scenejs@latest:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-scenejs/-/react-scenejs-1.1.0.tgz#ffadd43550a773b782937fef6c7e975a9006dd5e"
+  integrity sha512-heT3tM2BvCWRLr1IDOA+v54SbmP5QqeqlDTj1JvUCydZ9i+VYXSw7ab9oNZJpY2fCE8aFH2Ap4b2OeaZfpy6wQ==
+  dependencies:
+    "@types/node" "^12.0.0"
+    "@types/react" "^16.0.0"
+    "@types/react-dom" "^16.0.0"
+    scenejs "^1.0.1"
+
 react@^16.7.0:
   version "16.9.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.9.0.tgz#40ba2f9af13bc1a38d75dbf2f4359a5185c4f7aa"
@@ -3862,6 +3935,16 @@ sax@^1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
+
+scenejs@^1.0.1:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/scenejs/-/scenejs-1.5.0.tgz#326aa5b7db7d5829854d23f44be9445e694ffd04"
+  integrity sha512-Xo6LjUsaVcTbC+FGMMwUH1jthAQUj6bq2i55iEBBifrBn/nzm/++dGo8tqjCzMbm6KUPOpiry38N7r9QY2mWpQ==
+  dependencies:
+    "@daybrush/utils" "^1.3.1"
+    "@scena/event-emitter" "^1.0.3"
+    css-styled "^1.0.0"
+    order-map "^0.2.2"
 
 scheduler@^0.15.0:
   version "0.15.0"
@@ -4121,7 +4204,7 @@ stream-shift@^1.0.0:
   resolved "https://registry.yarnpkg.com/stream-shift/-/stream-shift-1.0.0.tgz#d5c752825e5367e786f78e18e445ea223a155952"
   integrity sha1-1cdSgl5TZ+eG944Y5EXqIjoVWVI=
 
-string-hash@1.1.3:
+string-hash@1.1.3, string-hash@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/string-hash/-/string-hash-1.1.3.tgz#e8aafc0ac1855b4666929ed7dd1275df5d6c811b"
   integrity sha1-6Kr8CsGFW0Zmkp7X3RJ1311sgRs=
